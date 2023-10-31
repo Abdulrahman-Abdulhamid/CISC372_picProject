@@ -1,0 +1,14 @@
+Script started on Mon Oct 30 21:50:50 2023
+]0;bood@r1n09.darwin:~/CISC372_picProject[?1034h[bood@r1n09 CISC372_picProject]$ make omp
+gcc -g -fopenmp omp_image.c -o image -lm
+]0;bood@r1n09.darwin:~/CISC372_picProject[bood@r1n09 CISC372_picProject]$ ./image pic1.jpg edge
+convolute function time: -1028159360
+Took 6 seconds
+]0;bood@r1n09.darwin:~/CISC372_picProject[bood@r1n09 CISC372_picProject]$ ./  make pthread
+gcc -g -lpthread pthread_image.c -o image -lm
+]0;bood@r1n09.darwin:~/CISC372_picProject[bood@r1n09 CISC372_picProject]$ ./image pic1.jpg edge
+Took 6 seconds
+]0;bood@r1n09.darwin:~/CISC372_picProject[bood@r1n09 CISC372_picProject]$ exit
+exit
+
+Script done on Mon Oct 30 21:51:57 2023
